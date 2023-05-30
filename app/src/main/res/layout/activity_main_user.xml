@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9D83CC"
+    tools:context=".MainActivityUser">
+
+    <Button
+        android:id="@+id/buttonLogout2"
+        android:layout_width="132dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#673AB7"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="logoutBtn"
+        android:text="Logout"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/buttonTk"
+        android:layout_width="132dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="56dp"
+        android:backgroundTint="#673AB7"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="TakeBtn"
+        android:text="Take Survey"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/textViewWlcstd"
+        android:layout_width="412dp"
+        android:layout_height="85dp"
+        android:text="\n\nWelcome Student!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <TextView
+        android:id="@+id/textViewModule"
+        android:layout_width="122dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Module"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWlcstd" />
+
+    <TextView
+        android:id="@+id/textViewSDate"
+        android:layout_width="122dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Start Date"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewModule"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWlcstd" />
+
+    <TextView
+        android:id="@+id/textViewEDate"
+        android:layout_width="122dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="End Date"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWlcstd" />
+
+    <ListView
+        android:id="@+id/myListView"
+        android:layout_width="409dp"
+        android:layout_height="456dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewModule" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

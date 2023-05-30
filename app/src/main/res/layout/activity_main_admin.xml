@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9D83CC"
+    tools:context=".MainActivityAdmin">
+
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="132dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="140dp"
+        android:backgroundTint="#673AB7"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="createBtn"
+        android:text="Delete"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="132dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#673AB7"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="signoutBtn"
+        android:text="Logout"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonEdit"
+        app:layout_constraintStart_toEndOf="@+id/buttonNew"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.901" />
+
+    <TextView
+        android:id="@+id/textViewWlcAdmin"
+        android:layout_width="412dp"
+        android:layout_height="85dp"
+        android:text="\n\nWelcome Admin!"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#673AB7"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="132dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="edtBtn"
+        android:text="Edit Survey"
+        android:textColor="?android:attr/textColorPrimaryInverseDisableOnly"
+        android:textSize="16sp"
+        app:backgroundTint="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.902" />
+
+    <Button
+        android:id="@+id/buttonNew"
+        android:layout_width="132dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="4dp"
+        android:backgroundTint="#673AB7"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="cBtn"
+        android:text="Create Survey"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.902" />
+
+    <ListView
+        android:id="@+id/myListView"
+        android:layout_width="0dp"
+        android:layout_height="447dp"
+        android:layout_marginTop="60dp"
+        android:choiceMode="singleChoice"
+        android:listSelector="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWlcAdmin" />
+
+    <TextView
+        android:id="@+id/textViewSDate"
+        android:layout_width="122dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Start Date"
+        android:textColor="#673AB7"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewEDate"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toEndOf="@+id/textViewModule"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWlcAdmin" />
+
+    <TextView
+        android:id="@+id/textViewEDate"
+        android:layout_width="122dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:text="End Date"
+        android:textColor="#673AB7"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWlcAdmin" />
+
+    <TextView
+        android:id="@+id/textViewModule"
+        android:layout_width="122dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Module"
+        android:textColor="#673AB7"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWlcAdmin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

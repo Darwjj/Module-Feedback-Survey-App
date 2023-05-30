@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="module_codes">
+        <item>CTEC3911: Mobile Application Development</item>
+        <item>CTEC3906: Interaction Design</item>
+        <item>CTEC3451: Development Project</item>
+        <item>IMAT3423: Systems Building: Methods</item>
+        <item>IMAT3104: Database Management and Programming</item>
+        <item>CTEC3904: Functional Software Development</item>
+        <item>CTEC3905: Front-End Web Development</item>
+    </string-array>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityUserSurvey">
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="cancelbttn"
+        android:text="Submit"
+        android:textSize="24sp"
+        app:backgroundTint="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUpdateQ10"
+        app:layout_constraintVertical_bias="0.502" />
+
+    <Button
+        android:id="@+id/btnUpdateSurvey2"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="96dp"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="nextButton"
+        android:text="next"
+        android:textSize="24sp"
+        app:backgroundTint="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUpdateQ10"
+        app:layout_constraintVertical_bias="0.502" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="92dp"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="previousButton"
+        android:text="cancel"
+        android:textSize="24sp"
+        app:backgroundTint="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUpdateQ10"
+        app:layout_constraintVertical_bias="0.502" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroupSurvey"
+        android:layout_width="367dp"
+        android:layout_height="422dp"
+        android:layout_marginTop="132dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rStronglyAgree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Strongly Agree"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/rAgree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agree"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/rNeitherAgreeorDisagree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Neither Agree nor Disagree"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/rDisagree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Disagree"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/rStronglyDisagree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Strongly Disagree"
+            android:textSize="24dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewQuestions"
+        android:layout_width="258dp"
+        android:layout_height="66dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/RadioGroupSurvey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
